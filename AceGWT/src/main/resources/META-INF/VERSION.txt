@@ -1,0 +1,5 @@
+Project: ${project.name}
+Version: ${project.version}
+Build: ${env.BUILD_ID}
+Date: ${buildTimestamp}
+SVN Revision: ${env.SVN_REVISION}

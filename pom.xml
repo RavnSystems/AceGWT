@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ravn</groupId>
+    <artifactId>ace-gwt-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Ace GWT Parent</name>
+    <modules>
+        <module>AceGWT</module>
+        <module>AceGWTDemo</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <gwtVersion>2.5.1</gwtVersion>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.gwt</groupId>
+                <artifactId>gwt-servlet</artifactId>
+                <version>${gwtVersion}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <scm>
+        <connection>scm:git:git@github.com:RavnSystems/AceGWT.git</connection>
+        <url>scm:git:git@github.com:RavnSystems/AceGWT.git</url>
+        <developerConnection>scm:git:git@github.com:RavnSystems/AceGWT.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>mavn.ravn.co.uk</id>
+            <name>mavn.ravn.co.uk-releases</name>
+            <url>http://mavn.ravn.co.uk/artifactory/libs-releases-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>mavn.ravn.co.uk</id>
+            <name>mavn.ravn.co.uk-snapshots</name>
+            <url>http://mavn.ravn.co.uk/artifactory/libs-snapshots-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
