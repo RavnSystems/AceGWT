@@ -45,8 +45,10 @@
     </dependencyManagement>
 
     <scm>
-        <connection>scm:git:git://github.com/RavnSystems/AceGWT.git</connection>
-        <developerConnection>scm:git:git://github.com/RavnSystems/AceGWT.git</developerConnection>
+        <connection>scm:git:https://github.com/RavnSystems/AceGWT.git</connection>
+        <developerConnection>scm:git:https://github.com/RavnSystems/AceGWT.git</developerConnection>
+        <url>https://github.com/RavnSystems/AceGWT</url>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
