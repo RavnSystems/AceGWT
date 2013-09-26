@@ -21,6 +21,19 @@
         <gwtVersion>2.5.1</gwtVersion>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <!-- necessary for multi-module projects -->
+                    <preparationGoals>clean verify install</preparationGoals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -32,9 +45,8 @@
     </dependencyManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:RavnSystems/AceGWT.git</connection>
-        <url>scm:git:git@github.com:RavnSystems/AceGWT.git</url>
-        <developerConnection>scm:git:git@github.com:RavnSystems/AceGWT.git</developerConnection>
+        <connection>scm:git:git://github.com/RavnSystems/AceGWT.git</connection>
+        <developerConnection>scm:git:git://github.com/RavnSystems/AceGWT.git</developerConnection>
     </scm>
 
     <distributionManagement>
